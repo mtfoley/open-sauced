@@ -27,10 +27,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: mtfoley/pr-compliance-action@octokit-errors
+      - uses: mtfoley/pr-compliance-action@main
         with:
           body-auto-close: false
           ignore-team-members: false
+          issue-labels: |
+            send-help
           protected-branch-auto-close: false
           watch-files: |
             package.json
