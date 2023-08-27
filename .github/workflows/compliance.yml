@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: mtfoley/pr-compliance-action@v0.5.0
+      - uses: mtfoley/pr-compliance-action@octokit-errors
         with:
           body-auto-close: false
           protected-branch-auto-close: false
