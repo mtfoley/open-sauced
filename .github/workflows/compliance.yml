@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: mtfoley/pr-compliance-action@main
+      - uses: JoshuaKGoldberg/pr-compliance-action@invert-issue-label-errors
         with:
           body-auto-close: false
           ignore-team-members: false
